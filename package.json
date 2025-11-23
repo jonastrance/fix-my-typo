@@ -1,0 +1,27 @@
+{
+  "name": "fix-my-typo-checker",
+  "version": "1.0.0",
+  "description": "A simple Node.js grammar and typo checker with basic UI",
+  "main": "src/checker.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/test-checker.js",
+    "check": "node src/cli.js"
+  },
+  "keywords": [
+    "grammar",
+    "typo",
+    "proofreading",
+    "spell-check",
+    "text-analysis"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
