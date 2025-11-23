@@ -77,11 +77,6 @@ class GrammarChecker {
         message: "Use 'would have' instead of 'would of'"
       },
       {
-        pattern: /\b(then)\s+(I|we|he|she|they|you)\b/gi,
-        correction: "than",
-        message: "Use 'than' for comparisons, not 'then'"
-      },
-      {
         pattern: /\b(effect)\s+(the|our|your)\b/gi,
         correction: "affect",
         message: "Use 'affect' as a verb (to influence)"

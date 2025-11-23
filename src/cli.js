@@ -25,6 +25,8 @@ function displayMenu() {
   console.log('3. Exit\n');
 }
 
+const EMPTY_LINE_THRESHOLD = 2;
+
 function promptForText(callback) {
   console.log('\nEnter your text (press Enter twice when done):');
   let text = '';
@@ -38,7 +40,7 @@ function promptForText(callback) {
   textReader.on('line', (line) => {
     if (line === '') {
       emptyLineCount++;
-      if (emptyLineCount >= 2) {
+      if (emptyLineCount >= EMPTY_LINE_THRESHOLD) {
         textReader.close();
         callback(text.trim());
       } else {

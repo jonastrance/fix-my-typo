@@ -1,5 +1,13 @@
 /**
  * Express Web Server for Grammar Checker
+ * 
+ * NOTE: This is a demo/local development tool. 
+ * For production deployment, consider adding:
+ * - Rate limiting (e.g., express-rate-limit package)
+ * - Authentication
+ * - HTTPS
+ * - Input validation/sanitization
+ * - CORS configuration
  */
 
 const express = require('express');
@@ -16,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')));
 
 // Routes
+// NOTE: For production, add rate limiting to prevent abuse
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
