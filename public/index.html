@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix My Typo - Grammar Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✍️ Fix My Typo</h1>
+            <p class="subtitle">Professional Grammar & Typo Checker</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>Enter Your Text</h2>
+                <textarea 
+                    id="inputText" 
+                    placeholder="Type or paste your text here..."
+                    rows="10"
+                ></textarea>
+                
+                <div class="button-group">
+                    <button id="checkBtn" class="btn btn-primary">Check for Errors</button>
+                    <button id="correctBtn" class="btn btn-secondary">Auto-Correct</button>
+                    <button id="clearBtn" class="btn btn-clear">Clear</button>
+                </div>
+            </div>
+
+            <div id="resultsSection" class="results-section hidden">
+                <h2>Results</h2>
+                
+                <div id="summary" class="summary"></div>
+                
+                <div id="errorList" class="error-list"></div>
+                
+                <div id="correctedText" class="corrected-text hidden">
+                    <h3>Corrected Text</h3>
+                    <div class="text-display"></div>
+                    <button id="copyBtn" class="btn btn-small">Copy to Clipboard</button>
+                </div>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Analyzing text...</p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="features">
+                <div class="feature">
+                    <h3>🎯 Accurate</h3>
+                    <p>Catches common typos and grammar mistakes</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ Fast</h3>
+                    <p>Instant results in your browser</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 Private</h3>
+                    <p>All processing happens on the server</p>
+                </div>
+            </div>
+            
+            <p class="copyright">© 2024 Fix My Typo - Professional Proofreading Service</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
